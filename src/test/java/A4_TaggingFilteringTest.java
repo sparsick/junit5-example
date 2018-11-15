@@ -1,4 +1,24 @@
-package PACKAGE_NAME;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
 
-public class A4_TaggingFilteringTest {
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+@Tag("domain")
+class A4_TaggingFilteringTest {
+
+    // Demo see surefire configuration
+
+    @Tag("fast")
+    @Test
+    void testFast(){
+        assertTrue(true);
+    }
+
+    @Tag("slow")
+    @Tag("database")
+    @Test
+    void testslowDatabase(){
+        assertTrue(true);
+    }
+
 }
