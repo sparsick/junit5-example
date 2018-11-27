@@ -1,3 +1,5 @@
+package com.github.sparsick.junit5.examples.basics;
+
 import org.assertj.core.util.Lists;
 import org.junit.jupiter.api.Test;
 

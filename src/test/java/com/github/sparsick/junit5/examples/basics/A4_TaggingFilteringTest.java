@@ -1,3 +1,5 @@
+package com.github.sparsick.junit5.examples.basics;
+
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 

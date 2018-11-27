@@ -1,3 +1,5 @@
+package com.github.sparsick.junit5.examples.basics;
+
 import org.junit.jupiter.api.RepeatedTest;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
