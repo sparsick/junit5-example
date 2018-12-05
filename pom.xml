@@ -69,6 +69,8 @@
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
+                    <!--<testSource>1.8</testSource>-->
+                    <!--<testTarget>1.8</testTarget>-->
                 </configuration>
             </plugin>
             <plugin>
