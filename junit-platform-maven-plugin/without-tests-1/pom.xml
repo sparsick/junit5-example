@@ -16,6 +16,7 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <name>junit-platform-maven-plugin-examples-without-tests-1</name>
+    <description> without tests and no test dep</description>
 
     <build>
         <plugins>
