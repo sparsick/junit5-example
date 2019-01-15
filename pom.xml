@@ -22,6 +22,7 @@
         <module>junit-platform-maven-plugin/without-tests-1</module>
         <module>junit-platform-maven-plugin/without-tests-2</module>
         <module>junit-platform-maven-plugin/without-tests-3</module>
+        <module>junit-platform-maven-plugin/with-junit3-test</module>
     </modules>
     
 
