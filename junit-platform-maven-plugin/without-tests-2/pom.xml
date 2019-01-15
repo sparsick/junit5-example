@@ -49,7 +49,7 @@
             <plugin>
                 <groupId>de.sormuras.junit</groupId>
                 <artifactId>junit-platform-maven-plugin</artifactId>
-                <version>1.0.0-M4</version>
+                <version>${junit.platform.maven.plugin.version}</version>
                 <extensions>true</extensions> <!-- Necessary to execute it in 'test' phase. -->
             </plugin>
         </plugins>
