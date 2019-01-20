@@ -20,6 +20,7 @@
         <module>junit5</module>
         <module>junit-platform-maven-plugin/without-tests-1</module>
         <module>junit-platform-maven-plugin/without-tests-2</module>
+        <module>junit5-in-pre-java8-projects</module>
     </modules>
     
 
