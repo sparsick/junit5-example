@@ -1,3 +1,4 @@
+import java.util.function.Function;
 import org.junit.jupiter.api.Test;
 
 class JUnit5Test {
@@ -9,6 +10,6 @@ class JUnit5Test {
 
         java7.aMethod();
         
-//        Function<String, String > java8Feature = (input) -> input;
+        Function<String, String > java8Feature = (input) -> input;
     }
 }
