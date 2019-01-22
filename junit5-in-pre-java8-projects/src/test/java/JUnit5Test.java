@@ -8,5 +8,7 @@ class JUnit5Test {
         Java7Class java7 = new Java7Class();
 
         java7.aMethod();
+        
+//        Function<String, String > java8Feature = (input) -> input;
     }
 }
