@@ -89,3 +89,7 @@ nbactions.xml
 
 # End of https://www.gitignore.io/api/java,maven,intellij,netbeans,java
 /nbproject/
+
+### Gradle ###
+.gradle
+/build/
