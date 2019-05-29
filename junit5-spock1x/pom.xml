@@ -57,8 +57,8 @@
             </plugin>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.1</version>
-                <!-- 2.21.0 is requiered by spock, 2.22.1 or greater is required by JUnit5 but Spock doesn't run with it
+                <version>2.22.2</version>
+                <!-- 2.21.0 is requiered by spock, 2.22.2 or greater is required by JUnit5 but Spock doesn't run with it
                 when junit-vintage isn't declared in dependencies
                  -->
             </plugin>
