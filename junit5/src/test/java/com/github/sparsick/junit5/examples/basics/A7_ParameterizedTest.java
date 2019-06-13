@@ -55,7 +55,8 @@ class A7_ParameterizedTest {
     }
 
     @ParameterizedTest
-    @CsvSource({ "foo, 1", "bar, 2", "'baz, qux', 3" })
+    @CsvSource({ "foo, 1", "bar, 2",
+                 "'baz, qux', 3" })
     void testWithCsvSource(String first, int second) {
         assertNotNull(first);
         assertNotEquals(0, second);
@@ -69,7 +70,19 @@ class A7_ParameterizedTest {
 
 
 
-    // @CsvFileSource
+    // @CsvFileSource(resources = "/test-data.csv", numLinesToSkip = 1)
+
+
+
+//    @NullSource: provides a single null argument to the annotated @ParameterizedTest method.
+//    @NullSource cannot be used for a parameter that has a primitive type.
+//
+//    @EmptySource: provides a single empty argument to the annotated @ParameterizedTest method for parameters of the following types: java.lang.String, java.util.List, java.util.Set, java.util.Map, primitive arrays (e.g., int[], char[][], etc.), object arrays (e.g.,String[], Integer[][], etc.).
+//    Subtypes of the supported types are not supported.
+//
+//    @NullAndEmptySource: a composed annotation that combines the functionality of @NullSource and @EmptySource.
+
+
 
 
 }
