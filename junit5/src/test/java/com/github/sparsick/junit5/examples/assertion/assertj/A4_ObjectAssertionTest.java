@@ -13,7 +13,9 @@ class A4_ObjectAssertionTest {
 
     @Test
     void hasField(){
-        assertThat(new Hero ("Superman", "Clark Kent")).hasFieldOrProperty("realName");
+        assertThat(new Hero ("Superman", "Clark Kent"))
+                .hasFieldOrProperty("realName")
+                .hasFieldOrPropertyWithValue("realName", "Clark Kent");
         //        hasFieldOrPropertyWithValue
     }
 
@@ -28,7 +30,8 @@ class A4_ObjectAssertionTest {
     @Test
     @Disabled
     void isEqualToComparingFieldByFieldSample(){
-        assertThat(new Hero ("Superman", "Clark Kent")).isEqualToComparingFieldByField(new Hero("Batman", "Bruce Wayne"));
+        assertThat(new Hero ("Superman", "Clark Kent"))
+                .isEqualToComparingFieldByField(new Hero("Batman", "Bruce Wayne"));
         //        isEqualToComparingFieldByFieldRecursively
         //  	  isEqualToComparingOnlyGivenFields
         //        isEqualToIgnoringGivenFields
@@ -38,7 +41,8 @@ class A4_ObjectAssertionTest {
 
     @Test
     void fileSpecific(){
-        assertThat(new File(("src/test/resources/testdata.csv"))).canRead().canWrite().exists();
+        assertThat(new File(("src/test/resources/testdata.csv")))
+                .canRead().canWrite().exists();
 
         //  	doesNotExist
         //      hasBinaryContent

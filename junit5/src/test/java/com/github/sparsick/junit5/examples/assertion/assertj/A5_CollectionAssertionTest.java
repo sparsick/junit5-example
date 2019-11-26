@@ -11,7 +11,11 @@ class A5_CollectionAssertionTest {
     void basic(){
         List<String> heros = List.of("Batman", "Superman");
 
-        assertThat(heros).hasSize(2).contains("Batman").containsExactly("Batman", "Superman").containsAnyOf("Batman", "Superman", "Wonder woman");
+        assertThat(heros)
+                .hasSize(2)
+                .contains("Batman")
+                .containsExactly("Batman", "Superman")
+                .containsAnyOf("Batman", "Superman", "Wonder woman");
 
         // containsNull
         // negotation
@@ -21,6 +25,8 @@ class A5_CollectionAssertionTest {
     void extractionSample(){
         List<Hero> heros = List.of(new Hero("Batman", "Bruce Wayne"), new Hero("Superman", "Clark Kent"));
 
-        assertThat(heros).extracting("realName").contains("Bruce Wayne", "Clark Kent");
+        assertThat(heros)
+                .extracting("realName")
+                .contains("Bruce Wayne", "Clark Kent");
     }
 }

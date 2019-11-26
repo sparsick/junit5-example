@@ -9,7 +9,8 @@ class A1_BasicAssertionTest {
 
     @Test
     void basic() {
-        assertThat("The Lord of the Rings").isNotNull()
+        assertThat("The Lord of the Rings")
+                .isNotNull()
                 .startsWith("The")
                 .contains("Lord")
                 .endsWith("Rings");

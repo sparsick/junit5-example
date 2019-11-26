@@ -17,7 +17,7 @@ class A8_ConditionTest {
     void conditions(){
         Hero hero = new Hero("Superman", "Clark Kent");
         hero.setSupernaturalPower(true);
-        assertThat(hero).isNot(female);
+        assertThat(hero).is(female);
         assertThat(hero).has(supernaturalPower);
     }
 }

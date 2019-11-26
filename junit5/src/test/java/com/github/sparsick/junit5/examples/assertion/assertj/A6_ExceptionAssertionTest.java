@@ -24,14 +24,16 @@ class A6_ExceptionAssertionTest {
 
     @Test
     void assertThatThrownByExample(){
-        assertThatThrownBy(() -> { throw new Exception("boom!"); }).isInstanceOf(Exception.class)
+        assertThatThrownBy(() -> { throw new Exception("boom!"); })
+                .isInstanceOf(Exception.class)
                 .hasMessageContaining("boom")
                 .hasMessage("boom!");
     }
 
     @Test
     void assertThatExceptionOfTypeExample(){
-        assertThatExceptionOfType(IOException.class).isThrownBy(() -> { throw new IOException("boom!"); })
+        assertThatExceptionOfType(IOException.class)
+                .isThrownBy(() -> { throw new IOException("boom!"); })
                 .withMessage("%s!", "boom")
                 .withMessageContaining("boom")
                 .withNoCause();
