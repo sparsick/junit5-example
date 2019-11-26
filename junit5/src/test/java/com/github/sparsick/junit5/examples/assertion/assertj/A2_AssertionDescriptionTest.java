@@ -15,6 +15,7 @@ class A2_AssertionDescriptionTest {
         assertThat(superman.getRealName()).as("check %s's real name", superman.getName()).isEqualTo("Bruce Wayne");
     }
 
+    @Disabled
     @Test
     void customizeErrorMessage(){
         Hero superman = new Hero("Superman", "Clark Kent");
