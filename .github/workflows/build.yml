@@ -10,18 +10,15 @@ on:
 
 jobs:
   openjdk:
-    strategy:
-      matrix:
-        jdk: [ jdk-8-slim, jdk-11-slim ]
-    name: "OpenJDK ${{ matrix.jdk }}"
+    name: "OpenJDK jdk-11-slim"
     runs-on: ubuntu-latest
-    container: "maven:3.6.3-${{ matrix.jdk }}"
+    container: "maven:3.6.3-jdk-11-slim"
     steps:
       - uses: actions/checkout@v2
       - uses: actions/cache@v2
         with:
           path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ matrix.jdk }}-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-maven-${{ matrix.jdk }}
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-maven
       - name: 'Build'
         run: mvn -V --no-transfer-progress clean verify --fail-at-end
