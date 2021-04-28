@@ -1,0 +1,18 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/."
+  schedule:
+    interval: monthly
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.mockito:mockito-core
+    versions:
+    - 3.7.7
+  - dependency-name: de.sormuras.junit:junit-platform-maven-plugin
+    versions:
+    - 1.1.1
+  - dependency-name: org.codehaus.gmavenplus:gmavenplus-plugin
+    versions:
+    - 1.12.0
